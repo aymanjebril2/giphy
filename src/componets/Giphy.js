@@ -16,7 +16,7 @@ const Giphy = () => {
   return (
     <div>
       <button onClick={getRndom}> get Random</button>
-      <h1>{data.title}</h1>
+      <h1> {data.title ? data.title : "some cool giphy"}</h1>
       <img src={data.fixed_height_small_still_url} alt={data.title} />
     </div>
   );
